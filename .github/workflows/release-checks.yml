@@ -1,20 +1,8 @@
 name: Release checks
 
 on:
-  pull_request:
-    paths:
-      - ".changeset/**"
-      - ".github/workflows/**"
-      - "cli/**"
-      - "inference/**"
-      - "packages/**"
-      - "patches/**"
-      - "scripts/accept-release-candidate.ts"
-      - "scripts/release-target.ts"
-      - "scripts/tsconfig.release.json"
-      - "bun.lock"
-      - "package.json"
-
+  push:
+    branches: [main]
 permissions:
   contents: read
 
