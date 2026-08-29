@@ -1,9 +1,8 @@
 name: Release
 
 on:
-  pull_request:
+  push:
     branches: [main]
-    types: [closed]
   workflow_dispatch:
     inputs:
       source_commit:
