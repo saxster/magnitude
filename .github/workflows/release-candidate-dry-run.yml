@@ -1,6 +1,8 @@
 name: Linux release candidate dry run
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
